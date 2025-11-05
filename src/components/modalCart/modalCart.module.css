@@ -1,0 +1,245 @@
+/* ===== Drawer + Backdrop ===== */
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(420px, 100vw);
+  height: 100vh;
+  background: var(--bg, #fff);
+  color: var(--fg, #111);
+  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.2);
+  transform: translateX(100%);
+  transition: transform 0.25s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  z-index: 9999;
+}
+.open {
+  transform: translateX(0);
+}
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 9998;
+}
+
+/* ===== Header ===== */
+.header {
+  flex-shrink: 0;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border, #e5e7eb);
+  background: color-mix(in oklab, var(--bg) 98%, transparent);
+}
+.title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+}
+.closeBtn {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 8px;
+}
+.closeBtn:hover {
+  color: var(--accent, #e2725b);
+}
+
+/* ===== Body ===== */
+.body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: var(--bg, #fff);
+}
+
+/* ===== Listado de items ===== */
+.list {
+  display: grid;
+  gap: 12px;
+}
+.empty {
+  color: color-mix(in oklab, var(--fg) 70%, transparent);
+  text-align: center;
+  padding: 16px;
+  border: 1px dashed var(--border, #e5e7eb);
+  border-radius: 10px;
+}
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 72px;
+}
+.itemInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+.thumb {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
+.meta {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+.name {
+  margin: 0;
+  font-weight: 600;
+  color: var(--fg, #111);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  color: color-mix(in oklab, var(--fg) 70%, transparent);
+  font-size: 14px;
+}
+.qtyLabel {
+  font-size: 12px;
+  margin-right: 2px;
+}
+.qtyInput {
+  width: 72px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid var(--border, #e5e7eb);
+  background: transparent;
+  color: var(--fg, #111);
+  padding: 0 8px;
+}
+.removeBtn {
+  border: 0;
+  background: transparent;
+  color: color-mix(in oklab, var(--fg) 70%, transparent);
+  cursor: pointer;
+  padding: 0 4px;
+}
+.removeBtn:hover {
+  color: var(--brand, #1b5e20);
+  text-decoration: none;
+}
+.price {
+  color: var(--fg, #111);
+  font-weight: 600;
+}
+
+/* ===== Divider ===== */
+.hr {
+  border: 0;
+  border-top: 1px solid var(--border, #e5e7eb);
+  margin: 8px 0;
+}
+
+/* ===== Formulario ===== */
+.form {
+  display: grid;
+  gap: 16px;
+}
+.sectionTitle {
+  font-weight: 800;
+  font-size: 16px;
+  margin: 0 0 4px;
+}
+.field {
+  display: grid;
+  gap: 6px;
+}
+.label {
+  font-size: 14px;
+  font-weight: 600;
+}
+.input {
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid var(--border, #e5e7eb);
+  background: transparent;
+  color: var(--fg, #111);
+  padding: 0 12px;
+}
+.textarea {
+  height: auto;
+  min-height: 96px;
+  padding: 8px 12px;
+  resize: vertical;
+}
+.radioRow {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.radioLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: var(--fg, #111);
+}
+
+/* ===== Footer ===== */
+.footerRow {
+  flex-shrink: 0;
+  padding: 16px 24px;
+  border-top: 1px solid var(--border, #e5e7eb);
+  display: grid;
+  gap: 12px;
+  background: color-mix(in oklab, var(--bg) 98%, transparent);
+}
+.totalRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--fg, #111);
+}
+.totalPrice {
+  font-size: 20px;
+  color: var(--accent, #e2725b);
+}
+.confirmBtn {
+  width: 100%;
+  height: 44px;
+  border-radius: 10px;
+  font-weight: 800;
+  border: 0;
+  background: var(--brand, #003366);
+  color: #fff;
+  cursor: pointer;
+}
+.confirmBtn:hover {
+  filter: brightness(1.05);
+}
+.confirmBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.invalid {
+  border-color: #c83333 !important;
+}
+.errorMsg {
+  color: #c83333;
+  margin-top: 6px;
+  display: inline-block;
+}

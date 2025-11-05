@@ -1,0 +1,127 @@
+.aside {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .aside {
+    width: 360px;
+    margin-inline-start: 24px;
+    position: sticky;
+    top: 96px;
+    height: calc(100vh - 120px);
+    display: block;
+  }
+}
+
+.panel {
+  height: 100%;
+  background: color-mix(in oklab, var(--bg) 80%, transparent);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: var(--fg);
+  font-weight: 800;
+  font-size: 24px;
+}
+.list {
+  flex: 1;
+  overflow: auto;
+  margin: 12px 0;
+  display: grid;
+  gap: 12px;
+  padding-right: 6px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.thumb {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.meta {
+  flex: 1;
+}
+.itemName {
+  color: var(--fg);
+  font-weight: 700;
+}
+.itemPrice {
+  color: color-mix(in oklab, var(--fg) 70%, transparent);
+  font-size: 14px;
+}
+
+.qty {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.minus,
+.plus {
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.minus {
+  background: #7b1e26;
+}
+.plus {
+  background: var(--brand);
+}
+.count {
+  width: 16px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.totals {
+  border-top: 1px solid color-mix(in oklab, var(--fg) 20%, transparent);
+  padding-top: 12px;
+  display: grid;
+  gap: 10px;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  color: color-mix(in oklab, var(--fg) 80%, transparent);
+}
+.tips {
+  display: flex;
+  gap: 8px;
+}
+.tips button {
+  padding: 4px 8px;
+  font-size: 13px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: color-mix(in oklab, var(--bg) 80%, transparent);
+  color: var(--fg);
+  cursor: pointer;
+}
+.tipActive {
+  background: var(--brand) !important;
+  color: #fff !important;
+  border-color: transparent !important;
+}
+.totalRow {
+  display: flex;
+  justify-content: space-between;
+  color: var(--fg);
+  font-weight: 800;
+  font-size: 18px;
+}

@@ -1,0 +1,97 @@
+.footer {
+  background: color-mix(in oklab, var(--bg) 70%, transparent);
+  margin-top: 96px;
+}
+
+/* Grid 3 columnas */
+.grid {
+  display: grid;
+  gap: 24px;
+  padding-block: 24px;
+}
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* Títulos y textos */
+.h4 {
+  color: var(--fg);
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.muted {
+  color: color-mix(in oklab, var(--fg) 70%, transparent);
+}
+
+/* ENLACES */
+.link {
+  display: inline-block;
+  color: color-mix(in oklab, var(--fg) 80%, transparent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  margin-bottom: 6px;
+}
+.link:hover {
+  color: var(--brand);
+}
+
+/* Ícono en línea para contacto */
+.inlineIcon {
+  vertical-align: -2px;
+  margin-right: 6px;
+  color: var(--brand);
+}
+
+/* Redes sociales */
+.socials {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+.socialBtn {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: color-mix(in oklab, var(--fg) 6%, transparent);
+  color: color-mix(in oklab, var(--fg) 90%, transparent);
+  transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+.socialBtn:hover {
+  transform: translateY(-1px) scale(1.03);
+  background: color-mix(in oklab, var(--fg) 10%, transparent);
+  color: var(--brand);
+}
+
+/* COPYRIGHT */
+.copy {
+  border-top: 1px solid var(--border);
+  color: color-mix(in oklab, var(--fg) 60%, transparent);
+  text-align: center;
+  padding-block: 16px;
+  font-size: 13px;
+}
+.by {
+  opacity: 0.85;
+}
+
+/* ===== ELIMINADO: formulario (ya no se usa) =====
+.form {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+.input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--fg);
+}
+*/

@@ -1,0 +1,194 @@
+/* Header pegajoso: NO tapa contenido, se pega al hacer scroll */
+.header {
+  position: sticky; /* 🔑 ocupa su espacio y no superpone al hero */
+  top: 0;
+  inset-inline: 0;
+  z-index: 50;
+  background: color-mix(in oklab, var(--bg) 92%, transparent);
+  transition: background 0.18s ease, box-shadow 0.18s ease,
+    backdrop-filter 0.18s ease, border-color 0.18s ease;
+  border-bottom: 1px solid transparent;
+}
+.stuck {
+  background: color-mix(in oklab, var(--bg) 80%, transparent);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px); /* iOS Safari */
+  border-bottom-color: color-mix(in oklab, var(--fg) 20%, transparent);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+}
+
+/* Contenedor: dos filas en móvil (row + dropdown); una en desktop */
+.container {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+/* Fila principal */
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 16px;
+  min-height: 56px; /* altura constante: evita saltos y solapes en iPhone */
+}
+
+/* Marca */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0; /* permite elipsis */
+  text-decoration: none;
+}
+.logo {
+  width: 36px;
+  height: 36px;
+  flex: 0 0 auto;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.title {
+  color: var(--fg);
+  font: 800 clamp(16px, 2.6vw, 22px) / 1.1 Arial, Helvetica, sans-serif;
+  letter-spacing: -0.015em;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Acciones a la derecha */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+/* Botón hamburger (solo móvil) */
+.menuToggle {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: color-mix(in oklab, var(--bg) 88%, transparent);
+  color: var(--fg);
+  border-radius: 10px;
+  padding: 8px 10px;
+  line-height: 1;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.menuToggle:hover {
+  border-color: color-mix(in oklab, var(--brand) 50%, var(--border));
+}
+.menuToggle:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--brand) 25%, transparent);
+}
+.burger {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.burger i {
+  width: 18px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 1px;
+}
+
+/* Compactar botones dentro del header */
+.actions :global(.btn) {
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-size: 0.92rem;
+  line-height: 1;
+}
+
+/* ===== Links ===== */
+
+/* Desktop inline */
+.linksInline {
+  display: none;
+  gap: 24px;
+  align-items: center;
+  margin-inline: 8px;
+}
+.linksInline a {
+  color: var(--fg);
+  text-decoration: none;
+  opacity: 0.9;
+  padding: 8px 0;
+}
+.linksInline a:hover {
+  color: var(--brand);
+}
+
+/* Móvil colapsable */
+.linksBlock {
+  display: grid;
+  grid-template-rows: 0fr; /* colapsado */
+  transition: grid-template-rows 180ms ease;
+  overflow: hidden;
+  border-top: 1px solid transparent;
+  margin: 0 16px 8px;
+  border-radius: 10px;
+}
+.linksInner {
+  min-height: 0;
+  overflow: hidden;
+}
+.linksInner a {
+  display: block;
+  padding: 10px 12px;
+  color: var(--fg);
+  text-decoration: none;
+  background: color-mix(in oklab, var(--bg) 88%, transparent);
+  border: 1px solid var(--border);
+  border-top: none;
+}
+.linksInner a:first-child {
+  border-top: 1px solid var(--border);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.linksInner a:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.linksInner a:hover {
+  color: var(--brand);
+}
+.open {
+  grid-template-rows: 1fr; /* expandido */
+  border-top-color: color-mix(in oklab, var(--fg) 20%, transparent);
+}
+
+/* ====== Desktop ====== */
+@media (min-width: 768px) {
+  .row {
+    padding: 12px 24px;
+  }
+  .menuToggle {
+    display: none;
+  }
+
+  /* Una sola fila: mostramos links inline y ocultamos dropdown */
+  .linksInline {
+    display: flex;
+  }
+  .linksBlock {
+    display: none;
+  }
+
+  /* El contenedor vuelve a una sola fila */
+  .container {
+    grid-template-rows: auto;
+  }
+}

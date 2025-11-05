@@ -1,0 +1,1698 @@
+{
+  "region": "Costa",
+  "currency": "USD",
+  "tabs": [
+    "Desayunos",
+    "Encebollados",
+    "Sopas",
+    "Platos fuertes",
+    "Combos",
+    "Porciones",
+    "Bebidas"
+  ],
+  "subTabs": {
+    "Sopas": ["Costa", "Sierra"],
+    "Bebidas": [
+      "Naturales",
+      "Limonadas",
+      "Coco",
+      "Naranja",
+      "Batidos",
+      "Gaseosas",
+      "Tés",
+      "Agua",
+      "Cervezas/Micheladas"
+    ]
+  },
+  "filters": {
+    "categories": [
+      "Desayunos",
+      "Encebollados",
+      "Sopas",
+      "Platos fuertes",
+      "Combos",
+      "Porciones",
+      "Bebidas"
+    ],
+    "proteins": [
+      "Pollo",
+      "Carne",
+      "Cerdo",
+      "Camarón",
+      "Concha",
+      "Pescado",
+      "Corvina",
+      "Cangrejo",
+      "Mixto",
+      "Mariscos",
+      "Pulpo",
+      "Picudo",
+      "Calamar",
+      "Gallina",
+      "Huevo",
+      "Queso",
+      "Embutidos"
+    ],
+    "styles": [
+      "Cazuela",
+      "Sango",
+      "Encocado",
+      "Ajillo",
+      "Apanado",
+      "Plancha",
+      "Arroz",
+      "Chaufa",
+      "Ceviche",
+      "Sopa"
+    ],
+    "mealTime": ["Desayuno", "Almuerzo", "Cena"],
+    "dishType": ["Fuerte", "Sopa", "Combo", "Porción", "Bebida"],
+    "spicy": ["Suave", "Medio", "N/A"]
+  },
+  "items": [
+    {
+      "id": "desayunos-1",
+      "category": "Desayunos",
+      "name": "Desayuno El Glotón",
+      "description": "Bolón mixto, bolón de queso, dos huevos, bistec de carne y café.",
+      "price": 5.5,
+      "tags": ["Desayuno", "Carne", "Huevo", "Queso"],
+      "slug": "desayuno-el-gloton",
+      "image": {
+        "src": "/images/platos/desayuno-el-gloton.jpg",
+        "alt": "Foto de Desayuno El Glotón",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "desayunos-2",
+      "category": "Desayunos",
+      "name": "Desayuno continental",
+      "description": "Sánduche mixto, dos huevos revueltos, jugo y café.",
+      "price": 3.5,
+      "tags": ["Desayuno", "Huevo", "Bebida"],
+      "slug": "desayuno-continental",
+      "image": {
+        "src": "/images/platos/desayuno-continental.jpg",
+        "alt": "Foto de Desayuno continental",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "desayunos-3",
+      "category": "Desayunos",
+      "name": "Desayuno completo",
+      "description": "Sánduche mixto, dos huevos, jugo, café y seco de pollo o carne.",
+      "price": 6.0,
+      "tags": ["Desayuno", "Pollo", "Carne", "Huevo", "Bebida"],
+      "slug": "desayuno-completo",
+      "image": {
+        "src": "/images/platos/desayuno-completo.jpg",
+        "alt": "Foto de Desayuno completo",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "desayunos-4",
+      "category": "Desayunos",
+      "name": "Desayuno Glotón con camarón",
+      "description": "Bolón mixto, bolón de queso, dos huevos, cazuela de camarones y café.",
+      "price": 6.0,
+      "tags": ["Desayuno", "Camarón", "Huevo", "Queso", "Cazuela"],
+      "slug": "desayuno-gloton-con-camaron",
+      "image": {
+        "src": "/images/platos/desayuno-gloton-con-camaron.jpg",
+        "alt": "Foto de Desayuno Glotón con camarón",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "desayunos-5",
+      "category": "Desayunos",
+      "name": "Tigrillo",
+      "description": "Majado de verde con queso y chicharrón, dos huevos, bistec de carne y café.",
+      "price": 6.0,
+      "tags": ["Desayuno", "Cerdo", "Huevo", "Queso"],
+      "slug": "tigrillo",
+      "image": {
+        "src": "/images/platos/tigrillo.jpg",
+        "alt": "Foto de Tigrillo",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "desayunos-6",
+      "category": "Desayunos",
+      "name": "Bolón Megalodón",
+      "description": "Bolón mixto (chicharrón y queso) bañado en salsa de mariscos de la casa y café.",
+      "price": 7.0,
+      "tags": ["Desayuno", "Cerdo", "Queso", "Mariscos"],
+      "slug": "bolon-megalodon",
+      "image": {
+        "src": "/images/platos/bolon-megalodon.jpg",
+        "alt": "Foto de Bolón Megalodón",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "desayunos-7",
+      "category": "Desayunos",
+      "name": "Tigrillo con camarón",
+      "description": "Majado de verde con queso y chicharrón, dos huevos, cazuela de camarones y café.",
+      "price": 7.0,
+      "tags": ["Desayuno", "Camarón", "Huevo", "Queso", "Cerdo"],
+      "slug": "tigrillo-con-camaron",
+      "image": {
+        "src": "/images/platos/tigrillo-con-camaron.jpg",
+        "alt": "Foto de Tigrillo con camarón",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "encebollados-1",
+      "category": "Encebollados",
+      "name": "Encebollado",
+      "description": "Ícono de la gastronomía ecuatoriana con el secreto del Santuario.",
+      "price": 3.5,
+      "tags": ["Sopa", "Pescado"],
+      "slug": "encebollado",
+      "image": {
+        "src": "/images/platos/encebollado.jpg",
+        "alt": "Foto de Encebollado",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "encebollados-2",
+      "category": "Encebollados",
+      "name": "Encebollado con camarón",
+      "description": "Encebollado tradicional con porción de camarones frescos.",
+      "price": 6.5,
+      "tags": ["Sopa", "Pescado", "Camarón"],
+      "slug": "encebollado-con-camaron",
+      "image": {
+        "src": "/images/platos/encebollado-con-camaron.jpg",
+        "alt": "Foto de Encebollado con camarón",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "encebollados-3",
+      "category": "Encebollados",
+      "name": "Maremoto",
+      "description": "Encebollado realzado con camarones XL y conchas.",
+      "price": 8.5,
+      "tags": ["Sopa", "Mariscos", "Camarón", "Concha"],
+      "slug": "maremoto",
+      "image": {
+        "src": "/images/platos/maremoto.jpg",
+        "alt": "Foto de Maremoto",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "encebollados-4",
+      "category": "Encebollados",
+      "name": "Mixto (camarón y pescado)",
+      "description": "La dupla del mar: camarón y pescado.",
+      "price": 9.5,
+      "tags": ["Sopa", "Camarón", "Pescado"],
+      "slug": "mixto-camaron-pescado",
+      "image": {
+        "src": "/images/platos/mixto-camaron-pescado.jpg",
+        "alt": "Foto de Mixto (camarón y pescado)",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "encebollados-5",
+      "category": "Encebollados",
+      "name": "Ceviche de concha",
+      "description": "Conchas frescas al estilo de la casa.",
+      "price": 8.75,
+      "tags": ["Ceviche", "Concha"],
+      "slug": "ceviche-de-concha",
+      "image": {
+        "src": "/images/platos/ceviche-de-concha.jpg",
+        "alt": "Foto de Ceviche de concha",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "encebollados-6",
+      "category": "Encebollados",
+      "name": "Ceviche de camarón",
+      "description": "Camarón fresco en cítricos y hierbas.",
+      "price": 8.0,
+      "tags": ["Ceviche", "Camarón"],
+      "slug": "ceviche-de-camaron",
+      "image": {
+        "src": "/images/platos/ceviche-de-camaron.jpg",
+        "alt": "Foto de Ceviche de camarón",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "encebollados-7",
+      "category": "Encebollados",
+      "name": "Ceviche de pescado",
+      "description": "Pescado marinado, clásico costeño.",
+      "price": 9.0,
+      "tags": ["Ceviche", "Pescado"],
+      "slug": "ceviche-de-pescado",
+      "image": {
+        "src": "/images/platos/ceviche-de-pescado.jpg",
+        "alt": "Foto de Ceviche de pescado",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "encebollados-8",
+      "category": "Encebollados",
+      "name": "Mixto (concha y camarón)",
+      "description": "La dupla perfecta en un solo plato.",
+      "price": 9.0,
+      "tags": ["Ceviche", "Concha", "Camarón"],
+      "slug": "mixto-concha-camaron",
+      "image": {
+        "src": "/images/platos/mixto-concha-camaron.jpg",
+        "alt": "Foto de Mixto (concha y camarón)",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "encebollados-9",
+      "category": "Encebollados",
+      "name": "Afrodisíaco",
+      "description": "Cuatro mariscos en leche de tigre con limón, pimiento, cebolla y hierbas.",
+      "price": 13.0,
+      "tags": ["Ceviche", "Mariscos"],
+      "slug": "afrodisiaco",
+      "image": {
+        "src": "/images/platos/afrodisiaco.jpg",
+        "alt": "Foto de Afrodisíaco",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "encebollados-10",
+      "category": "Encebollados",
+      "name": "Rompe colchón",
+      "description": "Concha, camarón y pescado juntos en una mezcla potente.",
+      "price": 11.5,
+      "tags": ["Ceviche", "Mariscos"],
+      "slug": "rompe-colchon",
+      "image": {
+        "src": "/images/platos/rompe-colchon.jpg",
+        "alt": "Foto de Rompe colchón",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "encebollados-11",
+      "category": "Encebollados",
+      "name": "Ceviche de balde",
+      "description": "Pescado en salsa de tomate con arroz y tostado.",
+      "price": 4.5,
+      "tags": ["Ceviche", "Pescado"],
+      "slug": "ceviche-de-balde",
+      "image": {
+        "src": "/images/platos/ceviche-de-balde.jpg",
+        "alt": "Foto de Ceviche de balde",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "encebollados-12",
+      "category": "Encebollados",
+      "name": "Manaviche",
+      "description": "Desde Jipijapa: picudo, camarón y calamar.",
+      "price": 11.0,
+      "tags": ["Ceviche", "Mariscos", "Picudo", "Calamar", "Camarón"],
+      "slug": "manaviche",
+      "image": {
+        "src": "/images/platos/manaviche.jpg",
+        "alt": "Foto de Manaviche",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "sopas-costa-1",
+      "category": "Sopas",
+      "subCategory": "Costa",
+      "name": "El dúo dinámico",
+      "description": "Sango de verde con dos cangrejos pata gorda.",
+      "price": 10.75,
+      "tags": ["Sopa", "Cangrejo", "Sango"],
+      "slug": "duo-dinamico",
+      "image": {
+        "src": "/images/platos/duo-dinamico.jpg",
+        "alt": "Foto de El dúo dinámico",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "sopas-costa-2",
+      "category": "Sopas",
+      "subCategory": "Costa",
+      "name": "Cazuela de mariscos",
+      "description": "Almejas, mejillón, camarones, pescado y calamar.",
+      "price": 9.0,
+      "tags": ["Sopa", "Cazuela", "Mariscos"],
+      "slug": "cazuela-de-mariscos",
+      "image": {
+        "src": "/images/platos/cazuela-de-mariscos.jpg",
+        "alt": "Foto de Cazuela de mariscos",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "sopas-costa-3",
+      "category": "Sopas",
+      "subCategory": "Costa",
+      "name": "El crustáceo solitario",
+      "description": "Sango de verde con un cangrejo pata gorda.",
+      "price": 5.5,
+      "tags": ["Sopa", "Cangrejo", "Sango"],
+      "slug": "crustaceo-solitario",
+      "image": {
+        "src": "/images/platos/crustaceo-solitario.jpg",
+        "alt": "Foto de El crustáceo solitario",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "sopas-costa-4",
+      "category": "Sopas",
+      "subCategory": "Costa",
+      "name": "Levanta muertos",
+      "description": "Un cangrejo en cazuela de mariscos sustanciosa.",
+      "price": 12.5,
+      "tags": ["Sopa", "Cangrejo", "Cazuela"],
+      "slug": "levanta-muertos",
+      "image": {
+        "src": "/images/platos/levanta-muertos.jpg",
+        "alt": "Foto de Levanta muertos",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "sopas-sierra-1",
+      "category": "Sopas",
+      "subCategory": "Sierra",
+      "name": "Caldo de gallina",
+      "description": "Gallina del campo con yuca y hierbas.",
+      "price": 4.0,
+      "tags": ["Sopa", "Gallina"],
+      "slug": "caldo-de-gallina",
+      "image": {
+        "src": "/images/platos/caldo-de-gallina.jpg",
+        "alt": "Foto de Caldo de gallina",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "fuertes-1",
+      "category": "Platos fuertes",
+      "name": "Seco de gallina",
+      "description": "Guiso de gallina criolla a fuego lento.",
+      "price": 4.0,
+      "tags": ["Fuerte", "Gallina"],
+      "slug": "seco-de-gallina",
+      "image": {
+        "src": "/images/platos/seco-de-gallina.jpg",
+        "alt": "Foto de Seco de gallina",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "fuertes-2",
+      "category": "Platos fuertes",
+      "name": "Seco de carne",
+      "description": "Guiso de carne con toque casero.",
+      "price": 4.0,
+      "tags": ["Fuerte", "Carne"],
+      "slug": "seco-de-carne",
+      "image": {
+        "src": "/images/platos/seco-de-carne.jpg",
+        "alt": "Foto de Seco de carne",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "fuertes-3",
+      "category": "Platos fuertes",
+      "name": "Menestras",
+      "description": "Chuleta, pollo o carne con arroz y lenteja o frejol.",
+      "price": 6.75,
+      "tags": ["Fuerte", "Carne", "Pollo", "Cerdo", "Menestra"],
+      "slug": "menestras",
+      "image": {
+        "src": "/images/platos/menestras.jpg",
+        "alt": "Foto de Menestras",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "fuertes-4",
+      "category": "Platos fuertes",
+      "name": "1/2 Menestra",
+      "description": "Media porción de menestra con guarnición.",
+      "price": 4.0,
+      "tags": ["Fuerte", "Menestra"],
+      "slug": "media-menestra",
+      "image": {
+        "src": "/images/platos/media-menestra.jpg",
+        "alt": "Foto de 1/2 Menestra",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "fuertes-5",
+      "category": "Platos fuertes",
+      "name": "Churrasco",
+      "description": "Lomo a la plancha con arroz, papas, dos huevos y ensalada.",
+      "price": 7.5,
+      "tags": ["Fuerte", "Carne", "Huevo", "Plancha"],
+      "slug": "churrasco",
+      "image": {
+        "src": "/images/platos/churrasco.jpg",
+        "alt": "Foto de Churrasco",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "fuertes-6",
+      "category": "Platos fuertes",
+      "name": "Guatita",
+      "description": "Clásico criollo de mondongo en salsa.",
+      "price": 4.25,
+      "tags": ["Fuerte"],
+      "slug": "guatita",
+      "image": {
+        "src": "/images/platos/guatita.jpg",
+        "alt": "Foto de Guatita",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "fuertes-7",
+      "category": "Platos fuertes",
+      "name": "Milanesa",
+      "description": "Filete crocante con jamón y queso al estilo del Santuario.",
+      "price": 7.5,
+      "tags": ["Fuerte", "Carne", "Queso"],
+      "slug": "milanesa",
+      "image": {
+        "src": "/images/platos/milanesa.jpg",
+        "alt": "Foto de Milanesa",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "fuertes-8",
+      "category": "Platos fuertes",
+      "name": "Corvina",
+      "description": "Crocante por fuera y suave por dentro.",
+      "price": 7.25,
+      "tags": ["Fuerte", "Corvina"],
+      "slug": "corvina",
+      "image": {
+        "src": "/images/platos/corvina.jpg",
+        "alt": "Foto de Corvina",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "fuertes-9",
+      "category": "Platos fuertes",
+      "name": "El costeñito",
+      "description": "Sabor del mar crocante por fuera y suave por dentro.",
+      "price": 7.75,
+      "tags": ["Fuerte", "Mariscos"],
+      "slug": "el-costenito",
+      "image": {
+        "src": "/images/platos/el-costenito.jpg",
+        "alt": "Foto de El costeñito",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "fuertes-10",
+      "category": "Platos fuertes",
+      "name": "Trilogía marina",
+      "description": "Corvina sobre papas crocantes con ceviches de camarón y concha.",
+      "price": 7.75,
+      "tags": ["Fuerte", "Corvina", "Camarón", "Concha"],
+      "slug": "trilogia-marina",
+      "image": {
+        "src": "/images/platos/trilogia-marina.jpg",
+        "alt": "Foto de Trilogía marina",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "fuertes-11",
+      "category": "Platos fuertes",
+      "name": "Mega Trilogía marina",
+      "description": "Trilogía marina reforzada con picudo y calamar.",
+      "price": 9.5,
+      "tags": ["Fuerte", "Corvina", "Camarón", "Concha", "Picudo", "Calamar"],
+      "slug": "mega-trilogia-marina",
+      "image": {
+        "src": "/images/platos/mega-trilogia-marina.jpg",
+        "alt": "Foto de Mega Trilogía marina",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "fuertes-12",
+      "category": "Platos fuertes",
+      "name": "Camarón apanado",
+      "description": "Camarones XL con arroz, papas y ensalada.",
+      "price": 8.75,
+      "tags": ["Fuerte", "Camarón", "Apanado"],
+      "slug": "camaron-apanado",
+      "image": {
+        "src": "/images/platos/camaron-apanado.jpg",
+        "alt": "Foto de Camarón apanado",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "fuertes-13",
+      "category": "Platos fuertes",
+      "name": "Encocado de camarón / al ajillo",
+      "description": "Camarones frescos en salsa de coco o al ajillo.",
+      "price": 8.75,
+      "tags": ["Fuerte", "Camarón", "Encocado", "Ajillo"],
+      "slug": "encocado-o-ajillo-camaron",
+      "image": {
+        "src": "/images/platos/encocado-o-ajillo-camaron.jpg",
+        "alt": "Foto de Encocado de camarón / al ajillo",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "fuertes-14",
+      "category": "Platos fuertes",
+      "name": "Arroz con camarón",
+      "description": "Camarones XL al estilo del Santuario.",
+      "price": 8.25,
+      "tags": ["Fuerte", "Camarón", "Arroz"],
+      "slug": "arroz-con-camaron",
+      "image": {
+        "src": "/images/platos/arroz-con-camaron.jpg",
+        "alt": "Foto de Arroz con camarón",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "fuertes-15",
+      "category": "Platos fuertes",
+      "name": "Arroz mixto",
+      "description": "Conchas y camarones XL en volcán de arroz.",
+      "price": 10.25,
+      "tags": ["Fuerte", "Camarón", "Concha", "Arroz"],
+      "slug": "arroz-mixto",
+      "image": {
+        "src": "/images/platos/arroz-mixto.jpg",
+        "alt": "Foto de Arroz mixto",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "fuertes-16",
+      "category": "Platos fuertes",
+      "name": "A lo bestia",
+      "description": "Corvina sobre arroz mixto con porción de cebiche de pescado.",
+      "price": 11.0,
+      "tags": ["Fuerte", "Corvina", "Arroz", "Ceviche"],
+      "slug": "a-lo-bestia",
+      "image": {
+        "src": "/images/platos/a-lo-bestia.jpg",
+        "alt": "Foto de A lo bestia",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "fuertes-17",
+      "category": "Platos fuertes",
+      "name": "Bandera",
+      "description": "Ceviches de concha y camarón, guatita y corvina con arroz.",
+      "price": 10.75,
+      "tags": ["Fuerte", "Ceviche", "Corvina", "Guatita"],
+      "slug": "bandera",
+      "image": {
+        "src": "/images/platos/bandera.jpg",
+        "alt": "Foto de Bandera",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "fuertes-18",
+      "category": "Platos fuertes",
+      "name": "Arroz chaufa",
+      "description": "Arroz con pollo, camarón y huevo.",
+      "price": 8.25,
+      "tags": ["Fuerte", "Arroz", "Pollo", "Camarón", "Huevo"],
+      "slug": "arroz-chaufa",
+      "image": {
+        "src": "/images/platos/arroz-chaufa.jpg",
+        "alt": "Foto de Arroz chaufa",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "fuertes-19",
+      "category": "Platos fuertes",
+      "name": "Cangrejos al ajillo",
+      "description": "Dos cangrejos pata gorda con arroz y patacones.",
+      "price": 12.5,
+      "tags": ["Fuerte", "Cangrejo", "Ajillo"],
+      "slug": "cangrejos-al-ajillo",
+      "image": {
+        "src": "/images/platos/cangrejos-al-ajillo.jpg",
+        "alt": "Foto de Cangrejos al ajillo",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "fuertes-20",
+      "category": "Platos fuertes",
+      "name": "Arroz con concha",
+      "description": "Arroz al punto con conchas jugosas.",
+      "price": 8.75,
+      "tags": ["Fuerte", "Concha", "Arroz"],
+      "slug": "arroz-con-concha",
+      "image": {
+        "src": "/images/platos/arroz-con-concha.jpg",
+        "alt": "Foto de Arroz con concha",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "fuertes-21",
+      "category": "Platos fuertes",
+      "name": "Arroz marinero El Santuario",
+      "description": "Concha y camarón en montaña de arroz con cangrejo pata gorda.",
+      "price": 14.25,
+      "tags": ["Fuerte", "Mariscos", "Arroz", "Cangrejo"],
+      "slug": "arroz-marinero-el-santuario",
+      "image": {
+        "src": "/images/platos/arroz-marinero-el-santuario.jpg",
+        "alt": "Foto de Arroz marinero El Santuario",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "fuertes-22",
+      "category": "Platos fuertes",
+      "name": "Pargo Glotón",
+      "description": "Tamaño grande para apetitos fuertes.",
+      "price": 9.5,
+      "tags": ["Fuerte", "Pescado"],
+      "slug": "pargo-gloton",
+      "image": {
+        "src": "/images/platos/pargo-gloton.jpg",
+        "alt": "Foto de Pargo Glotón",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "fuertes-23",
+      "category": "Platos fuertes",
+      "name": "Pargo JR",
+      "description": "Versión pequeña.",
+      "price": 7.5,
+      "tags": ["Fuerte", "Pescado"],
+      "slug": "pargo-jr",
+      "image": {
+        "src": "/images/platos/pargo-jr.jpg",
+        "alt": "Foto de Pargo JR",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "fuertes-24",
+      "category": "Platos fuertes",
+      "name": "Plancha de concha",
+      "description": "Conchitas asadas con encurtido, papas, arroz y patacones.",
+      "price": 11.5,
+      "tags": ["Fuerte", "Concha", "Plancha"],
+      "slug": "plancha-de-concha",
+      "image": {
+        "src": "/images/platos/plancha-de-concha.jpg",
+        "alt": "Foto de Plancha de concha",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "fuertes-25",
+      "category": "Platos fuertes",
+      "name": "Plancha Súper Glotón",
+      "description": "Concha, camarón y tentáculos de pulpo + cangrejo al ajillo.",
+      "price": 14.0,
+      "tags": ["Fuerte", "Mariscos", "Plancha", "Pulpo", "Cangrejo"],
+      "slug": "plancha-super-gloton",
+      "image": {
+        "src": "/images/platos/plancha-super-gloton.jpg",
+        "alt": "Foto de Plancha Súper Glotón",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "fuertes-26",
+      "category": "Platos fuertes",
+      "name": "Plancha de camarón",
+      "description": "Camarones XL con guarnición (papas, arroz o patacones) y encurtido.",
+      "price": 10.5,
+      "tags": ["Fuerte", "Camarón", "Plancha"],
+      "slug": "plancha-de-camaron",
+      "image": {
+        "src": "/images/platos/plancha-de-camaron.jpg",
+        "alt": "Foto de Plancha de camarón",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "fuertes-27",
+      "category": "Platos fuertes",
+      "name": "Plancha mixta",
+      "description": "Concha y camarón con guarnición y encurtido.",
+      "price": 11.75,
+      "tags": ["Fuerte", "Concha", "Camarón", "Plancha"],
+      "slug": "plancha-mixta",
+      "image": {
+        "src": "/images/platos/plancha-mixta.jpg",
+        "alt": "Foto de Plancha mixta",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "fuertes-28",
+      "category": "Platos fuertes",
+      "name": "Plancha mar y tierra (Costa–Sierra)",
+      "description": "Camarón XL, filete de pollo y carne, dos embutidos y papas.",
+      "price": 12.0,
+      "tags": ["Fuerte", "Camarón", "Pollo", "Carne", "Embutidos", "Plancha"],
+      "slug": "plancha-mar-y-tierra",
+      "image": {
+        "src": "/images/platos/plancha-mar-y-tierra.jpg",
+        "alt": "Foto de Plancha mar y tierra (Costa–Sierra)",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "combos-1",
+      "category": "Combos",
+      "name": "Combo El Goloso (1)",
+      "description": "1/2 caldo de gallina y 1/2 menestra (pollo, chuleta o carne).",
+      "price": 5.0,
+      "tags": ["Combo", "Gallina", "Menestra"],
+      "slug": "combo-el-goloso",
+      "image": {
+        "src": "/images/platos/combo-el-goloso.jpg",
+        "alt": "Foto de Combo El Goloso (1)",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "combos-2",
+      "category": "Combos",
+      "name": "Combo 2 Loco (2)",
+      "description": "1/2 encebollado y 1/2 menestra (pollo, chuleta o carne).",
+      "price": 5.0,
+      "tags": ["Combo", "Sopa", "Menestra"],
+      "slug": "combo-2-loco",
+      "image": {
+        "src": "/images/platos/combo-2-loco.jpg",
+        "alt": "Foto de Combo 2 Loco (2)",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "combos-3",
+      "category": "Combos",
+      "name": "Sabrosón (3)",
+      "description": "1/2 encebollado y 1/2 guatita.",
+      "price": 5.0,
+      "tags": ["Combo"],
+      "slug": "sabroson",
+      "image": {
+        "src": "/images/platos/sabroson.jpg",
+        "alt": "Foto de Sabrosón (3)",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "combos-4",
+      "category": "Combos",
+      "name": "Activo (4)",
+      "description": "1/2 encebollado y 1/2 arroz mixto.",
+      "price": 7.5,
+      "tags": ["Combo", "Arroz"],
+      "slug": "activo",
+      "image": {
+        "src": "/images/platos/activo.jpg",
+        "alt": "Foto de Activo (4)",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "porciones-1",
+      "category": "Porciones",
+      "name": "Arroz",
+      "description": "Porción de arroz.",
+      "price": 1.5,
+      "tags": ["Porción", "Arroz"],
+      "slug": "arroz-porcion",
+      "image": {
+        "src": "/images/platos/arroz-porcion.jpg",
+        "alt": "Foto de Arroz",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "porciones-2",
+      "category": "Porciones",
+      "name": "Patacones",
+      "description": "Porción de patacones.",
+      "price": 1.5,
+      "tags": ["Porción"],
+      "slug": "patacones",
+      "image": {
+        "src": "/images/platos/patacones.jpg",
+        "alt": "Foto de Patacones",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "porciones-3",
+      "category": "Porciones",
+      "name": "Maduro",
+      "description": "Porción de maduro.",
+      "price": 1.5,
+      "tags": ["Porción"],
+      "slug": "maduro",
+      "image": {
+        "src": "/images/platos/maduro.jpg",
+        "alt": "Foto de Maduro",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "porciones-4",
+      "category": "Porciones",
+      "name": "Patacón con queso",
+      "description": "Patacón con queso.",
+      "price": 2.5,
+      "tags": ["Porción", "Queso"],
+      "slug": "patacon-con-queso",
+      "image": {
+        "src": "/images/platos/patacon-con-queso.jpg",
+        "alt": "Foto de Patacón con queso",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "porciones-5",
+      "category": "Porciones",
+      "name": "Maduro con queso",
+      "description": "Maduro con queso.",
+      "price": 2.5,
+      "tags": ["Porción", "Queso"],
+      "slug": "maduro-con-queso",
+      "image": {
+        "src": "/images/platos/maduro-con-queso.jpg",
+        "alt": "Foto de Maduro con queso",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "porciones-6",
+      "category": "Porciones",
+      "name": "Papas",
+      "description": "Porción de papas.",
+      "price": 1.5,
+      "tags": ["Porción"],
+      "slug": "papas",
+      "image": {
+        "src": "/images/platos/papas.jpg",
+        "alt": "Foto de Papas",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "porciones-7",
+      "category": "Porciones",
+      "name": "Salchipapas",
+      "description": "Porción de salchipapas.",
+      "price": 2.75,
+      "tags": ["Porción", "Embutidos"],
+      "slug": "salchipapas",
+      "image": {
+        "src": "/images/platos/salchipapas.jpg",
+        "alt": "Foto de Salchipapas",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "bebidas-1",
+      "category": "Bebidas",
+      "subCategory": "Naturales",
+      "name": "Jarra jugo natural",
+      "description": "Mora, tamarindo, maracuyá, naranjilla, tomate de árbol, guanábana.",
+      "price": 4.5,
+      "tags": ["Bebida", "Jugo"],
+      "slug": "jarra-jugo-natural",
+      "image": {
+        "src": "/images/platos/jarra-jugo-natural.jpg",
+        "alt": "Foto de Jarra jugo natural",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "bebidas-2",
+      "category": "Bebidas",
+      "subCategory": "Naturales",
+      "name": "Media jarra jugo natural",
+      "description": "Variedades naturales.",
+      "price": 2.75,
+      "tags": ["Bebida", "Jugo"],
+      "slug": "media-jarra-jugo-natural",
+      "image": {
+        "src": "/images/platos/media-jarra-jugo-natural.jpg",
+        "alt": "Foto de Media jarra jugo natural",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "bebidas-3",
+      "category": "Bebidas",
+      "subCategory": "Naturales",
+      "name": "Vaso de jugo natural",
+      "description": "Variedades naturales.",
+      "price": 2.0,
+      "tags": ["Bebida", "Jugo"],
+      "slug": "vaso-jugo-natural",
+      "image": {
+        "src": "/images/platos/vaso-jugo-natural.jpg",
+        "alt": "Foto de Vaso de jugo natural",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+
+    {
+      "id": "bebidas-4",
+      "category": "Bebidas",
+      "subCategory": "Limonadas",
+      "name": "Jarra de limonada",
+      "description": "Limonada clásica.",
+      "price": 4.0,
+      "tags": ["Bebida", "Limonada"],
+      "slug": "jarra-limonada",
+      "image": {
+        "src": "/images/platos/jarra-limonada.jpg",
+        "alt": "Foto de Jarra de limonada",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "bebidas-5",
+      "category": "Bebidas",
+      "subCategory": "Limonadas",
+      "name": "Media limonada",
+      "description": "Limonada clásica.",
+      "price": 2.25,
+      "tags": ["Bebida", "Limonada"],
+      "slug": "media-limonada",
+      "image": {
+        "src": "/images/platos/media-limonada.jpg",
+        "alt": "Foto de Media limonada",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "bebidas-6",
+      "category": "Bebidas",
+      "subCategory": "Limonadas",
+      "name": "Vaso limonada",
+      "description": "Limonada clásica.",
+      "price": 1.5,
+      "tags": ["Bebida", "Limonada"],
+      "slug": "vaso-limonada",
+      "image": {
+        "src": "/images/platos/vaso-limonada.jpg",
+        "alt": "Foto de Vaso limonada",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "bebidas-7",
+      "category": "Bebidas",
+      "subCategory": "Limonadas",
+      "name": "Jarra limonada de fresa",
+      "description": "Limonada con fresa.",
+      "price": 4.5,
+      "tags": ["Bebida", "Limonada"],
+      "slug": "jarra-limonada-fresa",
+      "image": {
+        "src": "/images/platos/jarra-limonada-fresa.jpg",
+        "alt": "Foto de Jarra limonada de fresa",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "bebidas-8",
+      "category": "Bebidas",
+      "subCategory": "Limonadas",
+      "name": "Media limonada de fresa",
+      "description": "Limonada con fresa.",
+      "price": 2.5,
+      "tags": ["Bebida", "Limonada"],
+      "slug": "media-limonada-fresa",
+      "image": {
+        "src": "/images/platos/media-limonada-fresa.jpg",
+        "alt": "Foto de Media limonada de fresa",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "bebidas-9",
+      "category": "Bebidas",
+      "subCategory": "Limonadas",
+      "name": "Vaso limonada de fresa",
+      "description": "Limonada con fresa.",
+      "price": 1.75,
+      "tags": ["Bebida", "Limonada"],
+      "slug": "vaso-limonada-fresa",
+      "image": {
+        "src": "/images/platos/vaso-limonada-fresa.jpg",
+        "alt": "Foto de Vaso limonada de fresa",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+
+    {
+      "id": "bebidas-10",
+      "category": "Bebidas",
+      "subCategory": "Coco",
+      "name": "Jarra jugo de coco",
+      "description": "Jugo de coco.",
+      "price": 5.5,
+      "tags": ["Bebida", "Jugo"],
+      "slug": "jarra-jugo-coco",
+      "image": {
+        "src": "/images/platos/jarra-jugo-coco.jpg",
+        "alt": "Foto de Jarra jugo de coco",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "bebidas-11",
+      "category": "Bebidas",
+      "subCategory": "Coco",
+      "name": "Medio jugo de coco",
+      "description": "Jugo de coco.",
+      "price": 3.0,
+      "tags": ["Bebida", "Jugo"],
+      "slug": "medio-jugo-coco",
+      "image": {
+        "src": "/images/platos/medio-jugo-coco.jpg",
+        "alt": "Foto de Medio jugo de coco",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "bebidas-12",
+      "category": "Bebidas",
+      "subCategory": "Coco",
+      "name": "Vaso jugo de coco",
+      "description": "Jugo de coco.",
+      "price": 2.5,
+      "tags": ["Bebida", "Jugo"],
+      "slug": "vaso-jugo-coco",
+      "image": {
+        "src": "/images/platos/vaso-jugo-coco.jpg",
+        "alt": "Foto de Vaso jugo de coco",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "bebidas-13",
+      "category": "Bebidas",
+      "subCategory": "Coco",
+      "name": "Jarra limonada de coco",
+      "description": "Limonada de coco.",
+      "price": 5.5,
+      "tags": ["Bebida", "Limonada"],
+      "slug": "jarra-limonada-coco",
+      "image": {
+        "src": "/images/platos/jarra-limonada-coco.jpg",
+        "alt": "Foto de Jarra limonada de coco",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "bebidas-14",
+      "category": "Bebidas",
+      "subCategory": "Coco",
+      "name": "Media limonada de coco",
+      "description": "Limonada de coco.",
+      "price": 3.0,
+      "tags": ["Bebida", "Limonada"],
+      "slug": "media-limonada-coco",
+      "image": {
+        "src": "/images/platos/media-limonada-coco.jpg",
+        "alt": "Foto de Media limonada de coco",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "bebidas-15",
+      "category": "Bebidas",
+      "subCategory": "Coco",
+      "name": "Vaso limonada de coco",
+      "description": "Limonada de coco.",
+      "price": 2.5,
+      "tags": ["Bebida", "Limonada"],
+      "slug": "vaso-limonada-coco",
+      "image": {
+        "src": "/images/platos/vaso-limonada-coco.jpg",
+        "alt": "Foto de Vaso limonada de coco",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+
+    {
+      "id": "bebidas-16",
+      "category": "Bebidas",
+      "subCategory": "Naranja",
+      "name": "Jarra jugo de naranja",
+      "description": "Jugo de naranja natural.",
+      "price": 6.0,
+      "tags": ["Bebida", "Jugo"],
+      "slug": "jarra-jugo-naranja",
+      "image": {
+        "src": "/images/platos/jarra-jugo-naranja.jpg",
+        "alt": "Foto de Jarra jugo de naranja",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "bebidas-17",
+      "category": "Bebidas",
+      "subCategory": "Naranja",
+      "name": "Medio jugo de naranja",
+      "description": "Jugo de naranja natural.",
+      "price": 3.5,
+      "tags": ["Bebida", "Jugo"],
+      "slug": "medio-jugo-naranja",
+      "image": {
+        "src": "/images/platos/medio-jugo-naranja.jpg",
+        "alt": "Foto de Medio jugo de naranja",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "bebidas-18",
+      "category": "Bebidas",
+      "subCategory": "Naranja",
+      "name": "Vaso jugo de naranja",
+      "description": "Jugo de naranja natural.",
+      "price": 2.5,
+      "tags": ["Bebida", "Jugo"],
+      "slug": "vaso-jugo-naranja",
+      "image": {
+        "src": "/images/platos/vaso-jugo-naranja.jpg",
+        "alt": "Foto de Vaso jugo de naranja",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+
+    {
+      "id": "bebidas-19",
+      "category": "Bebidas",
+      "subCategory": "Batidos",
+      "name": "Vaso batido de fruta",
+      "description": "Batido de fruta.",
+      "price": 3.0,
+      "tags": ["Bebida", "Batido"],
+      "slug": "vaso-batido-de-fruta",
+      "image": {
+        "src": "/images/platos/vaso-batido-de-fruta.jpg",
+        "alt": "Foto de Vaso batido de fruta",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+
+    {
+      "id": "bebidas-20",
+      "category": "Bebidas",
+      "subCategory": "Gaseosas",
+      "name": "Gaseosa personal",
+      "description": "Presentación personal.",
+      "price": 0.75,
+      "tags": ["Bebida", "Gaseosa"],
+      "slug": "gaseosa-personal",
+      "image": {
+        "src": "/images/platos/gaseosa-personal.jpg",
+        "alt": "Foto de Gaseosa personal",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "bebidas-21",
+      "category": "Bebidas",
+      "subCategory": "Gaseosas",
+      "name": "Gaseosa grande",
+      "description": "Presentación grande.",
+      "price": 2.5,
+      "tags": ["Bebida", "Gaseosa"],
+      "slug": "gaseosa-grande",
+      "image": {
+        "src": "/images/platos/gaseosa-grande.jpg",
+        "alt": "Foto de Gaseosa grande",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "bebidas-22",
+      "category": "Bebidas",
+      "subCategory": "Gaseosas",
+      "name": "Gaseosa 1 L",
+      "description": "Botella de 1 litro.",
+      "price": 1.75,
+      "tags": ["Bebida", "Gaseosa"],
+      "slug": "gaseosa-1l",
+      "image": {
+        "src": "/images/platos/gaseosa-1l.jpg",
+        "alt": "Foto de Gaseosa 1 litro",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+
+    {
+      "id": "bebidas-23",
+      "category": "Bebidas",
+      "subCategory": "Tés",
+      "name": "Fuze Tea 1 L",
+      "description": "Té helado 1 litro.",
+      "price": 1.85,
+      "tags": ["Bebida", "Té"],
+      "slug": "fuze-tea-1l",
+      "image": {
+        "src": "/images/platos/fuze-tea-1l.jpg",
+        "alt": "Foto de Fuze Tea 1 L",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "bebidas-24",
+      "category": "Bebidas",
+      "subCategory": "Tés",
+      "name": "Fuze Tea 550 ml",
+      "description": "Té helado 550 ml.",
+      "price": 0.95,
+      "tags": ["Bebida", "Té"],
+      "slug": "fuze-tea-550ml",
+      "image": {
+        "src": "/images/platos/fuze-tea-550ml.jpg",
+        "alt": "Foto de Fuze Tea 550 ml",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+
+    {
+      "id": "bebidas-25",
+      "category": "Bebidas",
+      "subCategory": "Agua",
+      "name": "Agua 1 L",
+      "description": "Agua 1 litro.",
+      "price": 1.0,
+      "tags": ["Bebida", "Agua"],
+      "slug": "agua-1l",
+      "image": {
+        "src": "/images/platos/agua-1l.jpg",
+        "alt": "Foto de Agua 1 L",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "bebidas-26",
+      "category": "Bebidas",
+      "subCategory": "Agua",
+      "name": "Agua 600 ml",
+      "description": "Agua 600 ml.",
+      "price": 0.75,
+      "tags": ["Bebida", "Agua"],
+      "slug": "agua-600ml",
+      "image": {
+        "src": "/images/platos/agua-600ml.jpg",
+        "alt": "Foto de Agua 600 ml",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+
+    {
+      "id": "bebidas-27",
+      "category": "Bebidas",
+      "subCategory": "Cervezas/Micheladas",
+      "name": "Cerveza Club",
+      "description": "Pilsener Club.",
+      "price": 2.75,
+      "tags": ["Bebida", "Cerveza"],
+      "slug": "cerveza-club",
+      "image": {
+        "src": "/images/platos/cerveza-club.jpg",
+        "alt": "Foto de Cerveza Club",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "bebidas-28",
+      "category": "Bebidas",
+      "subCategory": "Cervezas/Micheladas",
+      "name": "Cerveza Pilsener",
+      "description": "Pilsener clásica.",
+      "price": 2.5,
+      "tags": ["Bebida", "Cerveza"],
+      "slug": "cerveza-pilsener",
+      "image": {
+        "src": "/images/platos/cerveza-pilsener.jpg",
+        "alt": "Foto de Cerveza Pilsener",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "bebidas-29",
+      "category": "Bebidas",
+      "subCategory": "Cervezas/Micheladas",
+      "name": "Michelada limón",
+      "description": "Michelada con limón.",
+      "price": 2.75,
+      "tags": ["Bebida", "Cerveza"],
+      "slug": "michelada-limon",
+      "image": {
+        "src": "/images/platos/michelada-limon.jpg",
+        "alt": "Foto de Michelada limón",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    },
+    {
+      "id": "bebidas-30",
+      "category": "Bebidas",
+      "subCategory": "Cervezas/Micheladas",
+      "name": "Michelada maracuyá",
+      "description": "Michelada con maracuyá.",
+      "price": 3.0,
+      "tags": ["Bebida", "Cerveza"],
+      "slug": "michelada-maracuya",
+      "image": {
+        "src": "/images/platos/michelada-maracuya.jpg",
+        "alt": "Foto de Michelada maracuyá",
+        "width": 1200,
+        "height": 900,
+        "aspectRatio": "4/3",
+        "blurDataURL": ""
+      }
+    }
+  ]
+}

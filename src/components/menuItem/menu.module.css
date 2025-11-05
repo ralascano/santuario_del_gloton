@@ -1,0 +1,245 @@
+/* ====== Sección ====== */
+.section {
+  padding-block: 24px 32px;
+}
+
+/* ====== Tabs (chips con scroll horizontal en móvil) ====== */
+.tabs {
+  display: flex;
+  gap: 10px;
+  padding-block: 8px 12px;
+  margin-bottom: 12px;
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+  border-bottom: none;
+}
+.tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.tab {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: color-mix(in oklab, var(--bg) 85%, transparent);
+  color: color-mix(in oklab, var(--fg) 70%, transparent);
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 0.98rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease,
+    transform 0.15s ease;
+  white-space: nowrap;
+}
+.tab:hover {
+  color: var(--fg);
+  border-color: color-mix(in oklab, var(--brand) 45%, var(--border));
+  transform: translateY(-1px);
+}
+.active {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: #fff;
+}
+
+/* ====== Subtabs (p.ej., Sopas: Costa / Sierra) ====== */
+.subtabs {
+  display: flex;
+  gap: 8px;
+  padding-block-end: 10px;
+  border-bottom: 1px dashed color-mix(in oklab, var(--fg) 18%, transparent);
+  margin-top: -2px;
+  margin-bottom: 12px;
+}
+.subtab {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: color-mix(in oklab, var(--bg) 88%, transparent);
+  color: color-mix(in oklab, var(--fg) 75%, transparent);
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+.subtab:hover {
+  color: var(--fg);
+  border-color: color-mix(in oklab, var(--brand) 60%, var(--border));
+}
+.subtab.active {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: #fff;
+}
+
+/* ====== Controles (búsqueda y futuros filtros) ====== */
+.controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+.search {
+  flex: 1 1 280px;
+  min-width: 220px;
+  border: 1px solid var(--border);
+  background: color-mix(in oklab, var(--bg) 88%, transparent);
+  color: var(--fg);
+  border-radius: 10px;
+  padding: 10px 12px;
+  outline: none;
+  font-size: 0.95rem;
+}
+.search::placeholder {
+  color: color-mix(in oklab, var(--fg) 55%, transparent);
+}
+.search:focus-visible {
+  border-color: var(--brand);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--brand) 25%, transparent);
+}
+
+/* ====== Grid de cards (1→2→3 columnas) ====== */
+.grid {
+  display: grid;
+  gap: 12px;
+}
+@media (min-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+  }
+}
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+  }
+}
+
+/* ====== Card ====== */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px;
+  background: color-mix(in oklab, var(--bg) 94%, transparent);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 160ms ease;
+}
+@media (hover: hover) {
+  .card:hover {
+    transform: translateY(-1px);
+  }
+}
+
+/* Imagen 4:3 (más natural para comida) */
+.thumb {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Texto */
+.body {
+  flex: 1;
+}
+.name {
+  color: var(--fg);
+  font-weight: 800;
+  font-size: clamp(16px, 4.5vw, 18px);
+}
+.desc {
+  color: color-mix(in oklab, var(--fg) 80%, transparent);
+  margin-top: 4px;
+  font-size: clamp(13px, 3.8vw, 14px);
+}
+.price {
+  color: color-mix(in oklab, var(--fg) 80%, transparent);
+  font-weight: 700;
+  margin-top: 6px;
+  font-size: clamp(14px, 4vw, 16px);
+}
+
+/* Controles de cantidad */
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6px;
+}
+.qty {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.minus,
+.plus {
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: var(--brand);
+}
+.minus {
+  background: #7b1e26;
+} /* “secondary” aproximado */
+.count {
+  width: 28px;
+  text-align: center;
+}
+
+/* Accesibilidad (focus states) */
+.tab:focus-visible,
+.subtab:focus-visible,
+.minus:focus-visible,
+.plus:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--brand) 28%, transparent);
+  border-radius: 10px;
+}
+
+/* Estados deshabilitados (CSS Modules-safe) */
+.minus[disabled],
+.plus[disabled],
+:global(button[disabled]) {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Mensaje sin resultados */
+.empty {
+  color: color-mix(in oklab, var(--fg) 70%, transparent);
+  padding: 24px 8px;
+  font-style: italic;
+}
+
+/* ====== Título para modo Recomendados (forceTab) ====== */
+.sectionHeader {
+  margin-bottom: 8px;
+}
+.sectionTitle {
+  font-size: clamp(20px, 4vw, 28px);
+  font-weight: 900;
+  color: var(--fg);
+  letter-spacing: -0.015em;
+  margin: 0 0 6px 0;
+}
+.sectionSubtitle {
+  margin: 0;
+  color: color-mix(in oklab, var(--fg) 70%, transparent);
+  font-size: clamp(14px, 2vw, 16px);
+}

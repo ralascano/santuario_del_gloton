@@ -1,0 +1,52 @@
+.section {
+  padding-block: 35px;
+  background: color-mix(in oklab, var(--bg) 80%, transparent);
+}
+.title {
+  text-align: center;
+  color: var(--fg);
+  font-weight: 800;
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+.grid {
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  object-fit: cover;
+}
+.name {
+  color: var(--fg);
+  font-weight: 700;
+}
+.stars {
+  color: #fbbf24;
+} /* amarillo */
+.starOff {
+  opacity: 0.3;
+}
+.text {
+  color: color-mix(in oklab, var(--fg) 80%, transparent);
+}

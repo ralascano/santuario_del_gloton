@@ -1,0 +1,130 @@
+.cartBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.count {
+  font-weight: 800;
+}
+.icon {
+  font-size: 1rem;
+}
+.label {
+  display: inline;
+}
+
+/* === FAB SOLO cuando el componente aplica la clase .fab === */
+.fab {
+  position: fixed !important; /* saca el botón del header */
+  bottom: 16px; /* fallback */
+  right: 16px; /* fallback */
+  inset-block-end: 16px; /* logical */
+  inset-block-end: calc(16px + env(safe-area-inset-bottom, 0px));
+  inset-block-start: auto !important;
+  inset-inline-start: auto !important;
+  z-index: 1000;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  padding: 0;
+  display: inline-grid;
+  place-items: center;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.12);
+  background: var(--brand);
+  color: #fff;
+  border: none;
+}
+
+/* En FAB ocultamos el texto, queda solo el ícono + badge */
+.fab .label {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+.fab .icon {
+  font-size: 1.2rem;
+  transform: translateY(-1px);
+}
+
+/* Badge numerito */
+.fab .count {
+  position: absolute;
+  inset-block-start: -6px;
+  inset-inline-end: -6px;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 6px;
+  border-radius: 999px;
+  display: inline-grid;
+  place-items: center;
+  background: #111;
+  color: #fff;
+  font-size: 12px;
+  border: 2px solid var(--brand);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* Pop cuando aparece o cambia */
+.pop {
+  animation: cart-pop 220ms ease-out;
+}
+@keyframes cart-pop {
+  0% {
+    transform: scale(0.85);
+  }
+  60% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Accesibilidad */
+.cartBtn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--brand) 35%, transparent);
+  border-radius: 999px;
+}
+
+/* En desktop, aunque exista .fab, lo “desactivamos” visualmente */
+@media (min-width: 768px) {
+  .fab {
+    position: static !important;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    inset: auto;
+    box-shadow: none;
+    background: var(--btn-bg, initial);
+    color: var(--fg);
+    padding: var(--btn-padding, 6px 10px);
+  }
+  .fab .label {
+    position: static;
+    inline-size: auto;
+    block-size: auto;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+    clip-path: none;
+  }
+  .fab .count {
+    position: static;
+    min-width: auto;
+    height: auto;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    box-shadow: none;
+    margin-left: 6px;
+    font-weight: 800;
+  }
+}
