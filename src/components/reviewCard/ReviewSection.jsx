@@ -10,9 +10,9 @@ export default function ReviewsSection() {
         <div className={styles.grid}>
           <ReviewCard
             avatar="/videos/avatarreviews/type-1.png" // imagen
-            name="María S."
+            name="Usuario 1"
             stars={5}
-            text="El encebollado sabe como hecho en casa..."
+            text="Porque es muy limpio y la comida es muy grande, es muy sabrosa y porque me encanta..."
             videoSrc="/videos/reviews/type-1.mp4" // mp4
             videoThumbnail="/videos/avatarreviews/type-1-thumb.png" // imagen
             videoDuration="0:24"
@@ -21,9 +21,9 @@ export default function ReviewsSection() {
 
           <ReviewCard
             avatar="/videos/avatarreviews/type-2.png" // imagen
-            name="María S."
+            name="Usuario 2"
             stars={5}
-            text="El encebollado sabe como hecho en casa..."
+            text="Por calidad, experiencia y atención. Muy recomendado, sabroso y te vas completamente satisfecho..."
             videoSrc="/videos/reviews/type-2.mp4" // mp4
             videoThumbnail="/videos/avatarreviews/type-2-thumb.png" // imagen
             videoDuration="0:24"
@@ -32,9 +32,9 @@ export default function ReviewsSection() {
 
           <ReviewCard
             avatar="/videos/avatarreviews/type-3.png" // imagen
-            name="María S."
+            name="Usuario 3"
             stars={5}
-            text="El encebollado sabe como hecho en casa..."
+            text="Bueno, a nosotros nos encanta su comida porque es fresca, tiene los sabores súper equilibrados, realmente salimos..."
             videoSrc="/videos/reviews/type-3.mp4" // mp4
             videoThumbnail="/videos/avatarreviews/type-3-thumb.png" // imagen
             videoDuration="0:24"
