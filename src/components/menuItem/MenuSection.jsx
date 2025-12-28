@@ -19,12 +19,12 @@ function itemKey(it, idx) {
 
 /**
  * Props:
- *  - minPrice?: number | null      (para "Recomendados", default 9 si se usa Recomendados)
- *  - forceTab?: string | null      ("Recomendados" | "Todos" | una categoría)
- *  - showTabs?: boolean            (default true)
- *  - showSubtabs?: boolean         (default true)
- *  - showSearch?: boolean          (default true)
- *  - showFeaturedTab?: boolean     (default true) -> agrega "Recomendados" al inicio de tabs
+ *  - minPrice?: number | null
+ *  - forceTab?: string | null
+ *  - showTabs?: boolean
+ *  - showSubtabs?: boolean
+ *  - showSearch?: boolean
+ *  - showFeaturedTab?: boolean
  */
 export default function MenuSection({
   minPrice = null,
@@ -34,8 +34,8 @@ export default function MenuSection({
   showSearch = true,
   showFeaturedTab = true,
 } = {}) {
-  const tabs = menuData.tabs; // ["Desayunos", "Encebollados", ...]
-  const subTabsBy = menuData.subTabs || {}; // { Sopas: ["Costa","Sierra"], ... }
+  const tabs = menuData.tabs;
+  const subTabsBy = menuData.subTabs || {};
 
   const featuredLabel = "Recomendados";
   const isForcedFeatured = forceTab === featuredLabel;
@@ -45,12 +45,12 @@ export default function MenuSection({
     ? [featuredLabel, ...baseTabs]
     : baseTabs;
 
-  const defaultActive = forceTab ?? displayedTabs[0]; // si forceTab, arranca ahí
+  const defaultActive = forceTab ?? displayedTabs[0];
   const [activeTab, setActiveTab] = useState(defaultActive);
   const [activeSub, setActiveSub] = useState(null);
   const [query, setQuery] = useState("");
 
-  // Si llega forceTab en runtime (home), sincroniza
+  // Sync si forceTab cambia en runtime
   useEffect(() => {
     if (forceTab && forceTab !== activeTab) {
       setActiveTab(forceTab);
@@ -62,23 +62,27 @@ export default function MenuSection({
   const visibleItems = useMemo(() => {
     let pool = Array.isArray(menuData.items) ? [...menuData.items] : [];
 
-    // 1) Tab virtual "Recomendados"
+    // ⭐ FILTRO EXCLUSIVO PARA "RECOMENDADOS"
+    // Solo muestra items con best: true
     if (activeTab === featuredLabel) {
+      pool = pool.filter((it) => it?.best === true);
+
+      // Si además quieres mantener el filtro por precio mínimo
       const threshold = Number(minPrice ?? 9);
       pool = pool.filter((it) => Number(it?.price) >= threshold);
     }
 
-    // 2) Filtro por categoría si NO es "Todos" ni "Recomendados"
+    // Categoría normal (no "Todos" ni "Recomendados")
     if (activeTab !== "Todos" && activeTab !== featuredLabel) {
       pool = pool.filter((it) => it && it.category === activeTab);
     }
 
-    // 3) Subcategoría (solo si hay una activa)
+    // Subcategoría
     if (activeSub) {
       pool = pool.filter((it) => it && it.subCategory === activeSub);
     }
 
-    // 4) Búsqueda
+    // Búsqueda
     const q = query.trim().toLowerCase();
     if (q) {
       pool = pool.filter((it) => {
@@ -89,7 +93,7 @@ export default function MenuSection({
       });
     }
 
-    // 5) Orden estable
+    // Orden estable
     return pool.filter(Boolean).sort((a, b) =>
       normStr(a?.name).localeCompare(normStr(b?.name), "es", {
         sensitivity: "base",
@@ -99,7 +103,6 @@ export default function MenuSection({
 
   function onTabClick(tab) {
     setActiveTab(tab);
-    // subtabs solo si categoría real (no "Todos" ni "Recomendados")
     if (tab === "Todos" || tab === featuredLabel) {
       setActiveSub(null);
     } else {
@@ -122,13 +125,9 @@ export default function MenuSection({
           <h2 className={styles.sectionTitle}>
             Platos recomendados del restaurante
           </h2>
-          {/* Si quieres una bajada opcional:
-        <p className={styles.sectionSubtitle}>
-          Selección de la casa (≥ ${Number(minPrice ?? 9).toFixed(2)})
-        </p>
-        */}
         </header>
       )}
+
       {/* Tabs */}
       {shouldShowTabs && (
         <div className={styles.tabs} role="tablist" aria-label="Categorías">
@@ -199,6 +198,7 @@ export default function MenuSection({
             image={it?.image?.src}
           />
         ))}
+
         {!visibleItems.length && (
           <p className={styles.empty}>
             No encontramos resultados

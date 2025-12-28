@@ -78,6 +78,7 @@
       "price": 5.5,
       "tags": ["Desayuno", "Carne", "Huevo", "Queso"],
       "slug": "desayuno-el-gloton",
+      "best": true,
       "image": {
         "src": "/images/platos/desayuno-el-gloton.jpg",
         "alt": "Foto de Desayuno El Glotón",
@@ -333,6 +334,7 @@
       "price": 13.0,
       "tags": ["Ceviche", "Mariscos"],
       "slug": "afrodisiaco",
+      "best": true,
       "image": {
         "src": "/images/platos/afrodisiaco.jpg",
         "alt": "Foto de Afrodisíaco",
@@ -420,6 +422,7 @@
       "price": 9.0,
       "tags": ["Sopa", "Cazuela", "Mariscos"],
       "slug": "cazuela-de-mariscos",
+      "best": true,
       "image": {
         "src": "/images/platos/cazuela-de-mariscos.jpg",
         "alt": "Foto de Cazuela de mariscos",
@@ -593,6 +596,7 @@
       "price": 7.5,
       "tags": ["Fuerte", "Carne", "Queso"],
       "slug": "milanesa",
+      "best": true,
       "image": {
         "src": "/images/platos/milanesa.jpg",
         "alt": "Foto de Milanesa",
@@ -644,6 +648,7 @@
       "price": 7.75,
       "tags": ["Fuerte", "Corvina", "Camarón", "Concha"],
       "slug": "trilogia-marina",
+      "best": true,
       "image": {
         "src": "/images/platos/trilogia-marina.jpg",
         "alt": "Foto de Trilogía marina",
@@ -899,6 +904,7 @@
       "price": 14.0,
       "tags": ["Fuerte", "Mariscos", "Plancha", "Pulpo", "Cangrejo"],
       "slug": "plancha-super-gloton",
+      "best": true,
       "image": {
         "src": "/images/platos/plancha-super-gloton.jpg",
         "alt": "Foto de Plancha Súper Glotón",

@@ -16,7 +16,7 @@ export default function Home() {
           <div style={{ flex: 1 }}>
             <Hero />
             <MenuSection
-              minPrice={9}
+              minPrice={0}
               forceTab="Recomendados" // fuerza el filtro
               showTabs={false} // oculta tabs
               showSubtabs={false} // oculta subtabs

@@ -112,6 +112,7 @@ export default function ContactSection() {
                 </p>
               </div>
 
+              {/*
               <div className={styles.row} role="listitem">
                 <span className={styles.icon} aria-hidden>
                   <IconMail />
@@ -126,6 +127,7 @@ export default function ContactSection() {
                   <span className={styles.muted}>(genérico)</span>
                 </p>
               </div>
+             */}
             </div>
 
             {/* Redes sociales */}

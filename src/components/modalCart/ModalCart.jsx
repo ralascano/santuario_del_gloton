@@ -5,7 +5,7 @@ import styles from "./modalCart.module.css";
 import { useDispatch } from "react-redux";
 import { clear } from "@/store/slices/cartSlice";
 
-const WHATSAPP_PHONE = "593984849691"; // 0984849691 sin el 0 y con +593
+const WHATSAPP_PHONE = "593994862959"; // 0984849691 sin el 0 y con +593
 
 function formatMoney(n) {
   const num = Number(n) || 0;
